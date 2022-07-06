@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Manrope:wght@200;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;1,200;1,400;1,500;1,700&family=Open+Sans:wght@300;400;500;700&family=Oswald:wght@400;500;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Spicy+Rice&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/form.css">
+    <title>FreecodeCamp Survey Form</title>
+</head>
+
+<body>
+    <section id="page-body">
+        <div id="page-header">
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <div id="form-container">
+            <form action="" id="page-form">
+                <div class="input-box">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="input-box">
+                    <label for="age">Age (optional) </label>
+                    <br>
+                    <input type="number" id="age" placeholder="Age">
+                </div>
+                <div class="input-box">
+                    <label for="currentRole">Which option best describes your current role?</label><br>
+                    <select name="" id="currentRole">
+                        <option value="">Select current role</option>
+                        <option value="Student">Student</option>
+                        <option value="Full Time Job">Full Time Job</option>
+                        <option value="Full Time Learner">Full Time Learner</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="recommend">Would you love to recommend freeCodeCamp to a friend</label>
+                    <br>
+                    <div class="radio-input">
+                        <input type="radio" name="recommendation" id="definite" value="definitely" checked> <label>Definitely</label>
+                    </div>
+                    <div class="radio-input">
+                        <input type="radio" name="recommendation" id="maybe" value="maybe"> <label>Maybe</label>
+                    </div>
+                    <div class="radio-input">
+                        <input type="radio" name="recommendation" id="not" value="not sure"> <label>Not sure</label>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="favFeature">What is your favorite feature on freeCodeCamp</label><br>
+                    <select name="favFeature" id="favFeature">
+                        <option value="null">Select an option</option>
+                        <option value="Challenges">Challenges</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Community">Community</option>
+                        <option value="Open Source">Open Source</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="improvement">What would you like to see improved? (Check all that apply)</label>
+                    <br>
+                    <div class="check-input">
+                        <input type="checkbox" id="frontend" value="Front-end "> <label>Front-end Projects</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox" id="backend" value="Back-end"> <label>Back-end Projects</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox" id="data" value="Data"> <label>Data Visualization</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox" id="challenges" value="Challenges"> <label>Challenges</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox" id="opensource" value="open source"> <label>Open Source Community</label>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="comments">Any comments or suggestions</label><br>
+                    <textarea name="" id="comments" rows="5" maxlength="300"
+                        placeholder="Enter your comments here..."></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
